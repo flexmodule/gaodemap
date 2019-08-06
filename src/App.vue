@@ -1,51 +1,63 @@
 <template>
   <div id="app">
-   	<Maptop :backmsg="backmsg" :ishome='ishome'/>
-    <router-view/>
-    <Mapbottom/>
+    <Maptop :backmsg="backmsg" :ishome="ishome" />
+    <router-view />
+    <Mapbottom />
   </div>
 </template>
 <script>
 // @ is an alias to /src
-import Maptop from '@/components/Maptop.vue'
-import Mapbottom from '@/components/Mapbottom.vue'
+import Maptop from "@/components/Maptop.vue";
+import Mapbottom from "@/components/Mapbottom.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Maptop,
     Mapbottom
   },
-  data () {
+  data() {
     return {
-			backmsg:"",
-			ishome:false
+      backmsg: "",
+      ishome: false
+    };
+  },
+  methods: {},
+  updated() {
+    if (this.$router.history.current.path != "/") {
+      console.log(99);
+      this.backmsg = "#1D2128";
+    } else {
+      this.backmsg = "transparent";
     }
   },
-  methods:{
-
-	},
-	updated() {
-		if(this.$router.history.current.path!='/') {
-			console.log(99)
-			this.backmsg="#1D2128"	
-		} else {
-			this.backmsg="transparent"	
-		}
-	},
-  mounted(){
-
-  }
-}
+  mounted() {}
+};
 </script>
 <style lang="scss">
 * {
   margin: 0;
   padding: 0;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 ul li {
   list-style: none;
 }
+
+.swiper-pagination {
+  margin-bottom: 130px;
+  .swiper-pagination-bullet {
+    width: 50px !important;
+    height: 2px !important;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+  }
+}
 .margin {
-  padding: 0 30px;
+  width: 1280px;
+  margin: 0 auto;
+}
+.btn { 
+	text-align: center;
 }
 </style>
