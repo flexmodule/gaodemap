@@ -9,7 +9,7 @@
   }
   .swiper-container {
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 0 auto;
     .swiper-wrapper {
       width: 100%;
