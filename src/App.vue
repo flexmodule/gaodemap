@@ -28,9 +28,11 @@ export default {
       this.backmsg = "#1D2128";
     } else {
       this.backmsg = "transparent";
-    }
+		}
   },
-  mounted() {}
+  mounted() {
+	
+	}
 };
 </script>
 <style lang="scss">
