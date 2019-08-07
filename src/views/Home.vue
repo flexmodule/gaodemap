@@ -498,6 +498,63 @@
       }
     }
   }
+  .develop {
+    height: 600px;
+    background: url(//lbs.amap.com/web/public/dist/images/homepage/quick_build_back_2x.b3a51c.jpg) center bottom no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    box-sizing: border-box;
+    .title {
+      text-align: center;
+      font: 28px/28px "";
+      color: #232325;
+      margin-bottom: 80px;
+      span {
+        &:nth-child(2) {
+          color: #3d6eff;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        text-align: center;
+        .li-t {
+          width: 100px;
+    height: 100px;
+    font-size: 36px;
+    font-family: PingFangSC-Semibold;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 0 auto 33px;
+    background: url(//lbs.amap.com/web/public/dist/images/homepage/square_2x.c6cc54.png) center 0 no-repeat;
+    background-size: auto 100%;
+
+        }
+      }
+      .te {
+    height: 2px;
+    width: 150px;
+    margin: 48px 0 0;
+    background: linear-gradient(to right,#e0e6f2,#262e46);
+      }
+    }
+    .btn {
+      color: #fff;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    font: 18px/50px "";
+        background: #3D6EFF;
+    margin: 80px auto;
+    border-radius: 25px;
+    }
+  }
 }
 </style>
 
@@ -705,6 +762,36 @@
             </div>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="develop">
+      <div class="margin">
+        <div class="title">
+          <span>注册开发者，立即领取价值1500元 </span>
+          <span>新用户福利</span>
+        </div>
+        <ul>
+          <li>
+            <div class="li-t">1</div>
+            <div class="li-b">注册账号</div>
+          </li>
+          <li class="te"></li>
+          <li>
+            <div class="li-t">2</div>
+            <div class="li-b">注册账号</div>
+          </li>
+          <li class="te"></li>
+          <li>
+            <div class="li-t">3</div>
+            <div class="li-b">注册账号</div>
+          </li>
+          <li class="te"></li>
+          <li>
+            <div class="li-t">4</div>
+            <div class="li-b">注册账号</div>
+          </li>
+        </ul>
+        <div class="btn">立即注册</div>
       </div>
     </div>
   </div>

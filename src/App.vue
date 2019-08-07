@@ -60,4 +60,9 @@ ul li {
 .btn { 
 	text-align: center;
 }
+a {
+  color: rgba(255,255,255,.38);
+    text-decoration: none;
+
+}
 </style>
