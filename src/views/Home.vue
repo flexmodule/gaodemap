@@ -564,7 +564,7 @@
             class="data"
             :class="navindex==index?'active':''"
             v-for="item,index in navbodylist"
-            :key="index"
+            :key="item"
             v-if="navindex==index"
           >
             <div class="data-l">
@@ -600,7 +600,7 @@
               class="solveWays-box"
               v-for="item,index in waylist"
               v-if="wayindex==index"
-              :key="index"
+              :key="item"
             >
               <div class="title">{{item.key}}解决方案</div>
               <div class="block"></div>
